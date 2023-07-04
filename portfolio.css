@@ -1,0 +1,225 @@
+# -iNeuBytes-portfolio
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+
+/* hero background image */
+.bgimage {
+    height: 100vh;
+    background: url("Rahul.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+
+}
+
+.hero_desc {
+    font-size: 2rem;
+    background-color: blue;
+    border-right: 50px;
+    ;
+    border-left: 50px;
+    border-radius: 4px;
+    border-width: 99px;
+    border-style: double;
+
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* spacing on all sections 
+#about, #services, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+    color: rgb(0, 255, 136);
+}*/
+#contact {
+    padding-bottom: 4rem;
+    color: rgb(255, 0, 81);
+
+}
+
+/* about section image css */
+.img_deg {
+    width: 56vh;
+    height: 450px;
+    ;
+
+}
+
+
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+}
+
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card:hover .servicesIcon {
+    color: #008000;
+}
+
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover,
+.fa-twitch:hover {
+    color: #008000;
+}
+
+.fab {
+    color: #000000;
+}
+
+/* footer styling */
+#footer {
+    background-color: #808080;
+    text-align: center;
+}
+
+.card-body {
+    background-color: rgb(0, 255, 247);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    transition: .5s ease-in-out;
+}
+
+body,
+html {
+    font-family: -apple-system, helvetica neue, helvetica, arial, sans-serif;
+    font-weight: 200;
+    position: relative;
+    height: 100%;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 200;
+    padding: 75px 0 50px 0;
+    text-align: center;
+    color: rgb(255, 134, 20);
+    background-color: blue;
+    border-style: double;
+    border-radius: 20px;
+
+    .subtext {
+        opacity: .3;
+    }
+}
+
+
+
+.formStyle {
+    background-color: #2ecc71;
+    padding: 20px;
+    width: 400px;
+    margin-bottom: 20px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ecf0f1;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    font-size: 1em;
+    font-weight: 100;
+    color: rgb(255, 0, 81)
+}
+
+.formButton {
+    float: right;
+    background-color: #ffffff;
+    display: inline-block;
+    color: #2ecc71;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 6px 24px;
+    margin-top: 15px;
+    margin-right: 60px;
+    text-decoration: none;
+}
+
+.formButton:hover {
+    background-color: #27ae60;
+    color: #ffffff;
+}
+
+.formButton:active {
+    position: relative;
+    top: 3px;
+}
+
+/*To remove the outline that appears on clicking the input textbox*/
+input:focus {
+    outline: none;
+}
+
+/* To format the placeholder text color */
+::-webkit-input-placeholder {
+    color: #ecf0f1;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #ecf0f1;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #ecf0f1;
+}
+
+:-ms-input-placeholder {
+    color: #ecf0f1;
+}
+
+h2 {
+    color: rgb(211, 0, 130);
+    font-size: large;
+
+}
+
+.nav-link {
+    color: rgb(42, 165, 69);
+    
+    font-size:xx-large;
+    font-style: italic;
+    text-size-adjust: 20px;
+    margin: auto;
+    letter-spacing: normal;
+}
