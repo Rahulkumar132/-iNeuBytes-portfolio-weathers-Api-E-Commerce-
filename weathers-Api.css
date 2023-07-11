@@ -2,77 +2,188 @@
 * {
     margin: 0;
     padding: 0;
+    border: 0;
+    outline: none;
     box-sizing: border-box;
 }
 
-
 body {
-    font-family: 'montserrat', sans-serif;
-    color: #fff;
-    background-image: url('istockphoto-538811669-1024x1024.jpg') ;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 100vh;
-}
-
-.app {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-   /* background: rgba(0,0,0,.6);*/
-    height: 100vh;
+    justify-content: center;
+    background-image: url('rahul.webp');
+    background-size: cover;
 }
 
-.header {
-    padding: 50px 20px 30px 20px;
+.container {
+    position: relative;
+    width: 400px;
+    height: 105px;
+    background: #00000058;
+    padding: 28px 32px;
+    overflow: hidden;
+    border-radius: 18px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.6s ease-out;
 }
 
-.header h1 {
-    font-family: 'Dancing Script', cursive;;
-    font-size: 60px;
-    color: #ff8623;
-    text-shadow: 1px 3px rgba(0,0,0,.9);
-    margin-bottom: 2.5em;
-    margin-top: 1em;
-}
-
-.header input {
-    background: transparent;
-    border: 0;
-    outline: 0;
-    font-size: 50px;
-    text-align: center;
-    color: rgb(0, 255, 157);
-    border: 1px solid #c6b8da;
-    margin-bottom: 1em;
+.search-box {
     width: 100%;
-    box-shadow: 0 12px 10px 0 #ff8623,0 17px 40px 0 #bbb8b8;
-    background-color: cyan;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.city {
-    font-size: 40px;
+.search-box input {
+    color: whitesmoke;
+    background-color: transparent;
+    width: 80%;
+    font-size: 24px;
     font-weight: 500;
-    margin-bottom: 10px;
-    text-shadow: 1px 3px rgba(0,0,0,.8);
+    text-transform: uppercase;
+    padding-left: 32px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.temp {
-    font-size: 100px;
+.search-box input::placeholder {
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(60, 255, 0);
+    text-transform: capitalize;
+}
+
+.search-box button {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: #06283D;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: 0.4s ease;
+}
+
+.search-box button:hover {
+    color: #fff;
+    background: #06283D;
+}
+
+.search-box i {
+    position: absolute;
+    color: #fff;
+    font-size: 28px;
+}
+
+.weather-box {
+    text-align: center;
+
+}
+
+.weather-box img {
+    width: 60%;
+    margin-top: 10px;
+}
+
+.weather-box .temperature {
+    position: relative;
+    color: #fff;
+    font-size: 4rem;
     font-weight: 700;
-    margin-bottom: 15px;
-    text-shadow: 1px 5px rgba(0,0,0,1);
 }
 
-.desc {
-    font-size: 25px;
-    font-style: italic;
-    text-shadow: 1px 3px rgba(0,0,0,.8);
-    margin-bottom: 10px;
+.weather-box .temperature span {
+    position: absolute;
+    margin-left: 4px;
+    font-size: 1.5rem;
 }
 
-.minmax {
-    font-size: 40px;
-    text-shadow: 1px 3px rgba(0,0,0,.8);
+.weather-box .description {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+
+.weather-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.weather-details .humidity,
+.weather-details .wind {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+}
+
+.weather-details .humidity {
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+
+.weather-details .wind {
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+
+.weather-details i {
+    color: #fff;
+    font-size: 26px;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+.weather-details span {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.weather-details p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.not-found {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    scale: 0;
+    opacity: 0;
+    display: none;
+}
+
+.not-found img {
+    width: 70%;
+}
+
+.not-found p {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.weather-box,
+.weather-details {
+    scale: 0;
+    opacity: 0;
+}
+
+.fadeIn {
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    to {
+        scale: 1;
+        opacity: 1;
+    }
 }
